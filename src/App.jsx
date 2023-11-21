@@ -1,5 +1,6 @@
 import { Route, Router, Routes } from 'react-router-dom';
 import './App.css';
+import About from './pages/About/About';
 import Calendar from './pages/Calendar/Calendar';
 import One_public from './pages/Calendar/One_public/One_public';
 import Contact from './pages/Contact/Contact';
