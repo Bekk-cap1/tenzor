@@ -1,10 +1,227 @@
-.header{
-    &__container{
-        max-width: 1440px;
-        margin: 0;
-        padding: 0;
-        &__inner{
+header {
+    .header {
+        width: 100%;
+        background: url(../../assets/image/Home_images/header_bg.svg);
+        background-size: cover;
+        font-family: "Montserrat";
 
+        &__container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0;
+            color: #fff;
+            line-height: 28.5px;
+
+            &__inner {
+                .head {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    font-size: 15.5px;
+                    position: relative;
+                    padding-top: 20px;
+                    text-transform: capitalize;
+                    ul {
+                        padding-left: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        list-style-type: none;
+
+                        li {
+                            margin: 20px;
+                        }
+
+                        button {
+                            background: none;
+                            border: none;
+                            color: #fff;
+                            cursor: pointer;
+                            margin: 0 20px;
+                            width: 90px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            b{
+                                margin-top: 5px;
+                            }
+                        }
+                        .academy{
+                            width: 160px;
+                        }
+
+                        .active__li {
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            background: #fff;
+                            color: #000;
+                            flex-direction: column;
+                            margin-top: 300px;
+                            transition: 0.4s ease-in-out;
+                            font-size: 20px;
+                            margin-left: 20px;
+                            border-radius: 5px;
+                            li{
+                                width: 450px;
+                                padding: 20px 20px;
+                                text-transform: uppercase;
+                                text-align: center;
+                                border-radius: 5px;
+                                margin: 0;
+                                cursor: pointer;
+
+                                &:hover {
+                                    background: rgb(199, 198, 198);
+                                }
+                            }
+                        }
+
+                        .active__academy {
+                            margin-left: 13%;
+                        }
+
+                        .active__again{
+                            position: absolute;
+                            background: #fff;
+                            color: #000;
+                            border-radius: 5px;
+                            margin-top: 45%;
+                            margin-left: 0;
+                            padding-left: 0;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            height: auto;
+                            li{
+                                margin-left: 0;
+                                padding-left: 0;
+                                .again__first{
+                                    display: flex;
+                                    text-align: start;
+                                    align-items: flex-start;
+                                    flex-direction: column;
+                                    margin-top: -90px;
+                                    li{
+                                        margin: 0;
+                                        padding: 5px;
+                                        a{
+                                            text-decoration: none;
+                                            color: #000;
+                                            &:hover{
+                                                color: #BC863D;
+                                            }
+                                        }
+                                        &:nth-child(1){
+                                            text-transform: uppercase;
+                                            font-weight: bold;
+                                        }
+                                        &:nth-child(2){
+                                            margin-top: 30px;
+                                            font-weight: bold;
+                                            text-transform: uppercase;
+                                        }
+
+                                    }
+                                }
+                                .again__second{
+                                    display: flex;
+                                    text-align: start;
+                                    align-items: flex-start;
+                                    flex-direction: column;
+                                    margin-top: 80px;
+                                    height: auto;
+                                    li{
+                                        margin: 0;
+                                        padding: 5px;
+                                        a{
+                                            text-decoration: none;
+                                            color: #000;
+                                            &:hover{
+                                                color: #BC863D;
+                                            }
+                                        }
+                                        &:nth-child(1), &:nth-child(7), &:nth-child(6){
+                                            font-weight: bold;
+                                            text-transform: uppercase;
+                                        }
+                                        &:nth-child(6),&:nth-child(7){
+                                            margin-top: 40px;
+                                        } 
+                                        &:nth-child(7){
+                                            margin-bottom: 100px;
+                                        }
+                                    }
+                                }
+                                .again__third{
+                                    display: flex;
+                                    text-align: start;
+                                    align-items: flex-start;
+                                    flex-direction: column;
+                                    font-weight: bold;
+                                    margin-top: -120px;
+                                    text-transform: uppercase;
+                                    li{
+                                        a{
+                                            text-decoration: none;
+                                            color: #000;
+                                            &:hover{
+                                                color: #BC863D;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .nonactive__li {
+                            display: none;
+                        }
+
+                    }
+                }
+
+                .head__logo {
+                    .head__right {
+                        margin-top: 100px;
+                        display: flex;
+                        flex-direction: column;
+
+                        img {
+                            width: 230px;
+                            height: 177px;
+                        }
+
+                        p {
+                            width: 587px;
+                            font-size: 19px;
+                            text-align: center;
+                            margin-top: 30px;
+                        }
+                    }
+
+                    ul {
+                        padding-left: 5%;
+                        list-style-type: none;
+                        padding-bottom: 70px;
+                        margin-top: -50px;
+
+                        li {
+                            margin: 20px 0px;
+
+                            a {
+                                text-decoration: none;
+                            }
+
+                            i {
+                                color: #fff;
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
