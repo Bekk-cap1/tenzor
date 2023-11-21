@@ -50,7 +50,6 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/hp_language' element={<HP_language/>}/>
         <Route path='/hp_menu' element={<Hp_menu/>}/>
-
         
       </Routes>
     </div>
