@@ -1,0 +1,72 @@
+.SailingClub{
+    margin-top: 60px;
+    .container{
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0;
+        .sailing_inner{
+            .sailing_top{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .sailing_left{
+                    img{
+                        margin-left: 20px;
+                    }
+                    .left_p1{
+                        color: #484848;
+                        font-family: Montserrat;
+                        font-size: 19px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 150%;
+                        max-width: 581px;
+                        margin-top: 55px;
+                    }
+                    .left_p2{
+                        color: #000;
+                        font-family: Montserrat;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 150%; 
+                        max-width: 591px;
+                        margin-top: 36px;
+                    }
+                }
+            }
+            .sailing_bottom{
+                margin-top: 80px;
+                text-align: center;
+                .sailing_mp3{
+                    background-image: url('../../../assets/image/Aboutimg/sailing_bottom.svg');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 100%;
+                    text-align: center;
+                    padding: 195px 0px;
+                    .bi-play-circle{
+                        font-size: 6rem;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }
+                .sailing_btn{
+                    margin-top: 60px;
+                    padding: 19px 73px;
+                    border-radius: 5px;
+                    background: #BC863D;
+                    border: none;
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-size: 15px;
+                    font-weight: 600;
+                    letter-spacing: 2.25px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

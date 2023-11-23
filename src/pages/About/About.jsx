@@ -1,9 +1,12 @@
 import React from 'react'
 import "./About.scss"
+import SailingClub from './SailingClub/SailingClub'
 
 function About() {
   return (
-    <div>About</div>
+    <div className='About'>
+      <SailingClub/>
+    </div>
   )
 }
 
