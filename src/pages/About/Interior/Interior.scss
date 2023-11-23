@@ -1,0 +1,80 @@
+.interior_inner{
+    margin-top: 95px;
+    .Interior_top{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        h4{
+            color: #000;
+            font-family: Montserrat;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%; /* 22.5px */
+            letter-spacing: 2.25px;
+            text-transform: uppercase;
+        }
+        h2{
+            color: #000;
+            font-family: Montserrat;
+            font-size: 47px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%; /* 70.5px */
+            text-transform: uppercase;
+        }
+        p{
+            color: #484848;
+            font-family: Montserrat;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 150%; /* 28.5px */
+            margin-top: 34px;
+            max-width: 794px;
+        }
+    }
+    .interior_bottom{
+        .interior_list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 53px;
+            .list_items{
+                list-style-type: none;
+                h2{
+                    margin-top: 25px;
+                    max-width: 371px;
+                    height: 62px;
+                    color: #000;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 24px */
+                }
+                p{
+                    color: #484848;
+                    font-family: Montserrat;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 150%;
+                    max-width: 371px;
+                    margin-top: -17px;
+                }
+            }
+            :nth-child(3){
+                margin-top: 25px;
+                p{
+                    margin-top: 5px;
+                    margin-bottom: -20px;
+                }
+            }
+            :nth-child(4){
+                margin-top: 76px;
+            }
+        }
+    }
+}

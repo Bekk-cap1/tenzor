@@ -1,0 +1,112 @@
+.Members {
+    background: #F8F8F8;
+    margin-top: 148px;
+    padding-bottom: 117px;
+    .members_inner {
+        .members_hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .members_left {
+
+                .members_title {
+                    color: #000;
+                    font-family: Montserrat;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%;
+                    letter-spacing: 2.25px;
+                    text-transform: uppercase;
+                }
+
+                .members_titlef {
+                    color: #000;
+                    font-family: Montserrat;
+                    font-size: 47px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%;
+                    text-transform: uppercase;
+                }
+
+                .members_describtion {
+                    max-width: 618px;
+                    margin-top: 45px;
+                    color: #484848;
+                    font-family: Montserrat;
+                    font-size: 19px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 150%;
+                    margin-left: 0px;
+                }
+
+                :nth-child(4) {
+                    max-width: 618px;
+                    margin-left: 0px;
+                    margin-top: 15px;
+                    color: #484848;
+                    font-family: Montserrat;
+                    font-size: 19px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 150%;
+                }
+
+                .members_span {
+                    margin-top: 46px;
+                    max-width: 618px;
+                    color: #000;
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    margin-left: 0px;
+                    line-height: 150%;
+                }
+            }
+            .members_right{
+                margin-top: -60px;
+                .top{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    :nth-child(2){
+                        margin-left: 58px;
+                    }
+                }
+                .bottom{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-left: 60px;
+                    margin-top: 30px;
+                    :nth-child(2){
+                        margin-left: 58px;
+                    }
+                }
+            }
+        }
+        .members_div{
+            text-align: center;
+            button{
+                cursor: pointer;
+                padding: 19px 133px;
+                color: #FFF;
+                border-radius: 5px;
+                border: none;
+                background-color: #BC863D;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%;
+                letter-spacing: 2.25px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
