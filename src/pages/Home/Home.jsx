@@ -2,17 +2,28 @@ import React, { useState } from 'react'
 import './Home.scss'
 import logo from "../../assets/image/Home_images/logo.svg"
 import head_logo from "../../assets/image/Home_images/head__logo.svg"
+import search__logo from "../../assets/image/Home_images/search__logo.svg"
 import { Link } from 'react-router-dom'
 
 function Home() {
   const [btnClick, setBtnClick] = useState(false)
   const [btnClick2, setBtnClick2] = useState(false)
   const [btnClick3, setBtnClick3] = useState(false)
+  const [btnSearch, setBtnSearch] = useState(false)
 
+  const tagB2 = document.getElementById('b2')
+  const tagB = document.getElementById('b')
   const click = (e) => {
-    const tagB2 = document.getElementById('b2')
-    const tagB = document.getElementById('b')
-
+    if('searchh' == e.target.parentNode.name){
+      setBtnSearch(true)
+      setBtnClick3(false)
+      setBtnClick(false)
+      setBtnClick2(false)
+      tagB.style.transform = 'rotate(0deg)'
+      tagB.style.marginTop = '7px'
+      tagB2.style.transform = 'rotate(0deg)'
+      tagB2.style.marginTop = '3px'
+    }
     if ("service" == e.target.name) {
       setBtnClick(!btnClick)
       setBtnClick2(false)
@@ -28,7 +39,7 @@ function Home() {
         tagB.style.marginTop = '7px'
       }
     }
-    if ("academy" == e.target.name) {
+    else if ("academy" == e.target.name) {
       setBtnClick2(!btnClick2)
       setBtnClick(false)
       setBtnClick3(false)
@@ -43,16 +54,19 @@ function Home() {
         tagB2.style.marginTop = '3px'
       }
     }
-    if ("again" == e.target.name) {
+    else if ("again" == e.target.name) {
       setBtnClick3(!btnClick3)
       setBtnClick(false)
       setBtnClick2(false)
-      console.log(btnClick3);
       tagB.style.transform = 'rotate(0deg)'
       tagB.style.marginTop = '7px'
       tagB2.style.transform = 'rotate(0deg)'
       tagB2.style.marginTop = '3px'
     }
+    
+  }
+  const search = (e)=>{
+
   }
 
   return (
@@ -64,21 +78,21 @@ function Home() {
               <div className="head">
                 <ul>
                   <li><img src={logo} alt="" /></li>
-                  <li>О клубе</li>
-                  <button onClick={click} name="service">Услуги <b id='b'><i class="bi bi-chevron-compact-down"></i></b></button>
+                  <li><Link to="/about">О клубе</Link></li>
+                  <button onClick={click} name="service">Услуги <b id='b'><i className="bi bi-chevron-compact-down"></i></b></button>
                   <ul className={btnClick == true ? "active__li" : 'nonactive__li'}>
-                    <li>Регаты и Тимбилдинг</li>
-                    <li>ЧАСТНЫЕ МЕРОПРИЯТИЯ И ПРАЗДНИКИ</li>
-                    <li>Аренда яхт</li>
+                    <li><Link to="/regata">Регаты и Тимбилдинг</Link></li>
+                    <li><Link to="/activity">ЧАСТНЫЕ МЕРОПРИЯТИЯ И ПРАЗДНИКИ</Link></li>
+                    <li><Link to="/rent">Аренда яхт</Link></li>
                   </ul>
-                  <button name='academy' className='academy' onClick={click}>Академия TSA <b id='b2'><i class="bi bi-chevron-compact-down"></i></b></button>
+                  <button name='academy' className='academy' onClick={click}>Академия TSA <b id='b2'><i className="bi bi-chevron-compact-down"></i></b></button>
                   <ul className={btnClick2 == true ? "active__li active__academy" : 'nonactive__li'}>
-                    <li>Детская парусная академия</li>
-                    <li>Юный рулевой</li>
-                    <li>ТРЕНИРОВКИ ДЛЯ ВЗРОСЛЫХ</li>
+                    <li><Link to="/children">Детская парусная академия</Link></li>
+                    <li><Link to="/adults">Юный рулевой</Link></li>
+                    <li><Link to="/schedule">ТРЕНИРОВКИ ДЛЯ ВЗРОСЛЫХ</Link></li>
                   </ul>
-                  <li>Success Race</li>
-                  <li>Tenzor international cup</li>
+                  <li><Link to="/success_race">Success Race</Link></li>
+                  <li><Link to="/">Tenzor international cup</Link></li>
                   <button onClick={click} name="again">Ещё...</button>
                   <ul className={btnClick3 == true ? "active__again" : 'nonactive__li'}>
                     <li>
@@ -114,9 +128,20 @@ function Home() {
                 </ul>
                 <ul>
                   <li>+998 (94) 469-25-09</li>
-                  <li><i class="bi bi-geo-alt"></i></li>
-                  <li><i class="bi bi-person"></i></li>
-                  <li><i class="bi bi-search"></i></li>
+                  <li><i className="bi bi-geo-alt"></i></li>
+                  <li><i className="bi bi-person"></i></li>
+                  <button onClick={click} name='searchh'><i name='searchh' className="bi bi-search"></i></button>
+                  <ul className={btnSearch == true ? 'ulSearch' : 'nonactive__li'}>
+                    <li>
+                      <img src={search__logo} alt="" />
+                      <b><button onClick={()=>setBtnSearch(false)}><i className="bi bi-x-lg"></i></button></b>
+                    </li>
+                    <li>
+                      <i className="bi bi-search"></i>
+                      <input type="text" placeholder='ВВедите ключевое слово'/>
+                      <button onClick={search}>ПОИСК</button>
+                    </li>
+                  </ul>
                 </ul>
               </div>
               <div className="head__logo">
@@ -125,10 +150,10 @@ function Home() {
                   <p>Яхт-клуб международного уровня, предлагающий комплекс яхтенных услуг премиум  класса</p>
                 </div>
                 <ul>
-                  <li><a href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a></li>
-                  <li><a href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a></li>
-                  <li><a href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a></li>
-                  <li><a href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a></li>
+                  <li><a href="http://" target="_blank" rel="noopener noreferrer"><i className="bi bi-facebook"></i></a></li>
+                  <li><a href="http://" target="_blank" rel="noopener noreferrer"><i className="bi bi-whatsapp"></i></a></li>
+                  <li><a href="http://" target="_blank" rel="noopener noreferrer"><i className="bi bi-instagram"></i></a></li>
+                  <li><a href="http://" target="_blank" rel="noopener noreferrer"><i className="bi bi-youtube"></i></a></li>
                 </ul>
               </div>
             </div>
