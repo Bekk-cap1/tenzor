@@ -108,5 +108,114 @@
                 text-transform: uppercase;
             }
         }
+        .members_formfather{
+            display: none;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(25, 30, 41, 0.80);
+            position: fixed;
+            .members_form{
+                position: absolute;
+                margin-left: 400px;
+                margin-top: 150px;      
+                background: #FFF;
+                padding: 69px 105px 84px 105px;
+                .bi-x-lg{
+                    position: absolute;
+                    margin-left: 942px;
+                    font-size: 30px;
+                    margin-top: -40px;
+                    cursor: pointer;
+                }
+                .form_title{
+                    color: #000;
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-size: 47px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 70.5px */
+                    text-transform: uppercase;
+                }
+                .form_describtion{
+                    color: #484848;
+                    font-family: Montserrat;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 150%; /* 25.5px */
+                    text-align: center;
+                    margin-top: 31px;
+                }
+                .form_inputs{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin-top: 54px;
+                    flex-wrap: wrap;
+                    max-width: 896px;
+                    input{
+                        padding: 17px 201px 17px 24px;
+                        margin-top: 16px;
+                        border-radius: 5px;
+                        background: #F8F8F8;
+                        border: none;
+                    }
+                    ::placeholder{
+                        color: #000;
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 150%; /* 24px */
+                    }
+                    .form_btn{
+                        padding: 19px 89px 19px 90px;
+                        color: #FFF;
+                        text-align: center;
+                        font-family: Montserrat;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 150%; /* 22.5px */
+                        letter-spacing: 2.25px;
+                        text-transform: uppercase;
+                        border: none;
+                        border-radius: 5px;
+                        background: #BC863D;
+                        margin-right: 45px;
+                        margin-top: 16px;
+                    }
+                }
+                .form_elon{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    text-align: center;
+                    margin-top: 30px;
+                    input{
+                        margin-right: -211px;
+                    }
+                    p{
+                        color: #484848;
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 150%; /* 21px */
+                        span{
+                            color: #BC863D;
+                            font-family: Montserrat;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 150%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

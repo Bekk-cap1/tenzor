@@ -1,9 +1,9 @@
 import React from 'react'
 import './And.scss'
-import Img1 from '../../../assets/image/Aboutimg/and_topimg1.svg'
-import Img2 from '../../../assets/image/Aboutimg/and_topimg2.svg'
-import Img3 from '../../../assets/image/Aboutimg/and_bottom2.svg'
-import Img4 from '../../../assets/image/Aboutimg/and_imgbottom2.svg'
+import Img1 from '../../../assets/image/Aboutimg/and_topimg1.png'
+import Img2 from '../../../assets/image/Aboutimg/and_topimg2.png'
+import Img3 from '../../../assets/image/Aboutimg/and_bottom2.png'
+import Img4 from '../../../assets/image/Aboutimg/and_imgbottom2.png'
 import Img5 from '../../../assets/image/Aboutimg/and_imgbottom3.png'
 function And() {
   return (

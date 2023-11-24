@@ -1,8 +1,8 @@
-import Dataimg1 from '../../assets/image/Aboutimg/Interior_dataimg1.svg'
-import Dataimg2 from '../../assets/image/Aboutimg/Interior_dataimg2.svg'
-import Dataimg4 from '../../assets/image/Aboutimg/Interior_dataimg4.svg'
-import Dataimg5 from '../../assets/image/Aboutimg/Interior_dataimg5.svg'
-import Dataimg6 from '../../assets/image/Aboutimg/Interior_dataimg6.svg'
+import Dataimg1 from '../../assets/image/Aboutimg/Interior_dataimg1.png'
+import Dataimg2 from '../../assets/image/Aboutimg/Interior_dataimg2.png'
+import Dataimg4 from '../../assets/image/Aboutimg/Interior_dataimg4.png'
+import Dataimg5 from '../../assets/image/Aboutimg/Interior_dataimg5.png'
+import Dataimg6 from '../../assets/image/Aboutimg/Interior_dataimg6.png'
 export const data =[
     {
         id:1,

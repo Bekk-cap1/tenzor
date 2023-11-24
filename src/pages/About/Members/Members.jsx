@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import './Members.scss'
-import Members1 from '../../../assets/image/Aboutimg/members_img1.svg'
-import Members2 from '../../../assets/image/Aboutimg/members_img2.svg'
-import Members3 from '../../../assets/image/Aboutimg/members_img3.svg'
-import Members4 from '../../../assets/image/Aboutimg/members_img4.svg'
+import Members1 from '../../../assets/image/Aboutimg/members_img1.png'
+import Members2 from '../../../assets/image/Aboutimg/members_img2.png'
+import Members3 from '../../../assets/image/Aboutimg/members_img3.png'
+import Members4 from '../../../assets/image/Aboutimg/members_img4.png'
 function Members() {
+    const [formf , setform] = useState(false) 
+    const formclick = (e)=>{
+        setform(!formf)
+    }
     return (
         <div className='Members'>
             <div className="container">
@@ -28,8 +32,27 @@ function Members() {
                             </span>
                         </div>
                     </div>
-                    <div className='members_div'>
-                        <button>Оформить</button>
+                    <div onClick={formclick} className='members_div'>
+                        <button >Оформить</button>
+                    </div>
+                    <div  className='members_formfather' style={formf == true? {display:'block'}:{}}>
+                        <div className='members_form'>
+                            <i onClick={()=>setform(!formf)} class="bi bi-x-lg"></i>
+                            <h1 className='form_title'>Заполните форму</h1>
+                            <p className='form_describtion'>Для того, чтобы оформить членство в Tenzor Sailing Club  заполните форму.</p>
+                            <div className='form_inputs'>
+                                <input type="text" placeholder='Имя' />
+                                <input type="text" placeholder='E-mail' />
+                                <input type="text" placeholder='Фамилия' />
+                                <input type="text" placeholder='Удобное время для связи' />
+                                <input type="text" placeholder='Телефон' />
+                                <button className='form_btn'>оТПРАВИТЬ ЗАЯВКУ</button>
+                            </div>
+                            <div className='form_elon'>
+                                <input type="checkbox" />
+                                <p>Я ознакомлен и согласен с <span>Политикой конфиденциальности</span></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
