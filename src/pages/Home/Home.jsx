@@ -4,6 +4,7 @@ import logo from "../../assets/image/Home_images/logo.svg"
 import head_logo from "../../assets/image/Home_images/head__logo.svg"
 import search__logo from "../../assets/image/Home_images/search__logo.svg"
 import { Link } from 'react-router-dom'
+import { dataActivity, dataBoat, dataTenzor } from '../../assets/data/home/home'
 
 function Home() {
   const [btnClick, setBtnClick] = useState(false)
@@ -14,7 +15,7 @@ function Home() {
   const tagB2 = document.getElementById('b2')
   const tagB = document.getElementById('b')
   const click = (e) => {
-    if('searchh' == e.target.parentNode.name){
+    if ('searchh' == e.target.parentNode.name) {
       setBtnSearch(true)
       setBtnClick3(false)
       setBtnClick(false)
@@ -63,9 +64,9 @@ function Home() {
       tagB2.style.transform = 'rotate(0deg)'
       tagB2.style.marginTop = '3px'
     }
-    
+
   }
-  const search = (e)=>{
+  const search = (e) => {
 
   }
 
@@ -134,11 +135,11 @@ function Home() {
                   <ul className={btnSearch == true ? 'ulSearch' : 'nonactive__li'}>
                     <li>
                       <img src={search__logo} alt="" />
-                      <b><button onClick={()=>setBtnSearch(false)}><i className="bi bi-x-lg"></i></button></b>
+                      <b><button onClick={() => setBtnSearch(false)}><i className="bi bi-x-lg"></i></button></b>
                     </li>
                     <li>
                       <i className="bi bi-search"></i>
-                      <input type="text" placeholder='ВВедите ключевое слово'/>
+                      <input type="text" placeholder='ВВедите ключевое слово' />
                       <button onClick={search}>ПОИСК</button>
                     </li>
                   </ul>
@@ -160,6 +161,91 @@ function Home() {
           </div>
         </div>
       </header>
+
+      <main>
+        <div className="container">
+          <div className="tenzor__sailin">
+            <ul>
+              {
+                dataTenzor.map((e) => (
+                  <li>
+                    <h4>{e.name}</h4>
+                    <h1>{e.title}</h1>
+                    <p>{e.text}</p>
+                    <h6>{e.subtitle}</h6>
+                    <button>{e.btnTitle}</button>
+                  </li>
+                ))
+              }
+            </ul>
+            <ul>
+              {
+                dataTenzor?.map((e) => (
+                  e.img?.map((q) => (
+                    <li>
+                      <img src={q.image} alt="" />
+                    </li>
+                  ))
+                ))
+              }
+            </ul>
+          </div>
+
+          <div className='boat'>
+            {
+              dataBoat?.map((e) => (
+                <img src={e.img} alt="" />
+              ))
+            }
+          </div>
+
+          <div className="activity">
+            <div className='activity__order'>
+              <ul>
+                {
+                  dataActivity?.map((e) => (
+                    <li>
+                      <h4>{e.name}</h4>
+                      <h1>{e.title}</h1>
+                      <p>{e.text}</p>
+                    </li>
+                  ))
+                }
+              </ul>
+              <ul>
+                {
+                  dataActivity?.map((e) => (
+                    e.example?.map((q) => (
+                      <li><i class="bi bi-check2"></i>  {q.title}</li>
+                    ))
+                  ))
+                }
+              </ul>
+              <button>{dataActivity?.map((e) => e.btnText)}</button>
+            </div>
+
+            <div className="activity__example">
+              <ul>
+                {
+                  dataActivity.map((e) => (
+
+                    e.objActivity.map((q) => (
+                      <li>
+                        <img src={q.img} alt="" />
+                        <div>
+                          <h4>{q.title}</h4>
+                          <p>{q.text}</p>
+                          <h6><Link to="/">{q.linkText}</Link></h6>
+                        </div>
+                      </li>
+                    ))
+                  ))
+                }
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
 
     </div>
   )
