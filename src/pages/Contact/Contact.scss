@@ -1,0 +1,344 @@
+.contact {
+    .header {
+        height: 700px;
+        background-image: url(../../assets/image/Home_images/contact-bg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .head ul {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        list-style-type: none;
+        padding: 40px 0;
+
+        li {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 5%;
+            color: #FFFFFF;
+            margin: 0 20px;
+        }
+
+        button {
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        select {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 5%;
+            color: #FFFFFF;
+            border: none;
+            outline: none;
+            margin: 0 20px;
+            background: none;
+        }
+    }
+
+    .hero {
+        margin-top: 230px;
+
+        .hero__inner {
+            margin-left: 13%;
+    
+            a {
+                font-size: 15px;
+                font-weight: 600;
+                letter-spacing: 15%;
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+    
+            h2 {
+                font-size: 60px;
+                font-weight: 600;
+                color: #FFFFFF;
+            }
+        }
+
+        .social-media {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+
+            img {
+                margin: 5px 0;
+            }
+        }
+    }
+
+    .contact__main {
+        padding: 60px 0;
+
+        .contact__main-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .right {
+                .sub-title {
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #000000;
+                }
+
+                .title {
+                    font-size: 19px;
+                    font-weight: 300;
+                    line-height: 28px;
+                    display: block;
+                    margin-top: 20px;
+                    width: 352px;
+                    color: #000000;
+                }
+
+                .text {
+                    font-size: 15px;
+                    font-weight: 300;
+                    line-height: 22px;
+                    color: #000000;
+                    width: 352px;
+                    margin-top: 20px;
+                }
+
+                .phone-number {
+                    font-size: 19px;
+                    font-weight: 600;
+                    display: block;
+                    margin-top: 20px;
+                    text-decoration: none;
+                    color: #000000;
+                }
+
+                .email {
+                    font-size: 16px;
+                    font-weight: 400;
+                    display: block;
+                    margin-top: 20px;
+                    color: #BC863D;
+                }
+                
+                .gps {
+                    font-size: 19px;
+                    font-weight: 300;
+                    display: block;
+                    margin-top: 20px;
+
+                    b {
+                        font-weight: 600;
+                    }
+                }
+
+                .contact__main-btn {
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #FFFFFF;
+                    width: 382px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #BC863D;
+                    border-radius: 5px;
+                    border: none;
+                    margin-top: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .contact__asaid-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 80px;
+
+        .right {
+            width: 25%;
+        }
+
+        .center {
+            width: 38%;
+
+            h2 {
+                font-size: 47px;
+                font-weight: 600;
+            }
+
+            .block {
+                display: flex;
+                margin: 20px 0;
+
+                .info {
+                    margin-left: 20px;
+
+                    span {
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        font-size: 19px;
+                        font-weight: 300;
+                        line-height: 28px;
+                        margin-top: 10px;
+                        width: 550px;
+                    }
+
+                    .block-inner {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 20px;
+
+                        span {
+                            font-size: 15px;
+                            font-weight: 300;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .left {
+            width: 27%;
+
+            img {
+                width: 431px;
+                height: 649px;
+            }
+        }
+    }
+
+    .footer {
+        background: #091D2B;
+
+        .footer-list {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 60px 0;
+
+
+            .footer-item {
+                h3 {
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #FFFFFF;
+                    margin-bottom: 30px;
+                }
+
+                .text {
+                    display: block;
+                    font-size: 15px;
+                    font-weight: 300;
+                    line-height: 22px;
+                    color: #FFFFFF;
+                    width: 349px;
+                }
+
+                .open {
+                    font-size: 15px;
+                    font-weight: 300;
+                    letter-spacing: 4%;
+                    color: #BC863D;
+                    text-decoration: none;
+                    display: block;
+                    margin-top: 10px;
+                }
+
+                .phone-number {
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    display: block;
+                    margin-top: 20px;
+                }
+
+                .email {
+                    font-size: 15px;
+                    font-weight: 300;
+                    letter-spacing: 4%;
+                    color: #BC863D;
+                    text-decoration: none;
+                    display: block;
+                    margin-top: 10px;
+                }
+
+                .social-media {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                }
+
+                a {
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: #BC863D;
+                    display: block;
+                    text-decoration: none;
+                    margin: 20px 0;
+                }
+
+                span {
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #FFFFFF;
+                    display: block;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+
+    .footer-inner {
+        width: 100%;
+        border-top: 1px solid #FFFFFF;
+        padding: 40px 0;
+
+        .block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .right {
+                display: flex;
+                align-items: center;
+
+                h4 {
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #FFFFFF;
+                }
+
+                span {
+                    width: 1px;
+                    height: 17px;
+                    background: #FFFFFF;
+                    display: block;
+                    margin: 0 20px;
+                }
+            }
+
+            .left span {
+                font-size: 14px;
+                font-weight: 300;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
