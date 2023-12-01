@@ -22,6 +22,7 @@ import Adults from './pages/TSA/Adults/Adults';
 import Children from './pages/TSA/Children/Children';
 import One_course from './pages/TSA/One_course/One_course';
 import Schedule from './pages/TSA/Schedule/Schedule';
+import Zakas from './pages/Zakas/Zakas';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/hp_language' element={<HP_language/>}/>
         <Route path='/hp_menu' element={<Hp_menu/>}/>
+        <Route path='/zakas' element={<Zakas />}/>
         
       </Routes>
     </div>

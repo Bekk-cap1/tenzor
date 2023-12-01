@@ -11,9 +11,45 @@ import RightImg from '../../assets/image/Home_images/img-1.png'
 import LeftImg from '../../assets/image/Home_images/img-2.png'
 import Img from '../../assets/image/Home_images/img.png'
 import Circle from '../../assets/image/Home_images/circle.png'
+import CloseIcon from '../../assets/image/Home_images/close-icon.svg'
+import { Link } from 'react-router-dom'
 
 function Contact() {
+  const handler = (e) => {
+    e.preventDefault()
+    let a = e.target.user.value
+    let b = e.target.password.value
+    if(a.length >= 6 && b.length >= 8) {
+      console.log("tog'ri");
+    }else {
+      console.log("hato");
+    }
+    
+    e.target.user.value = ""
+    e.target.password.value = ""
+  }
+
   return (
+    <>
+    <div className="zakas">
+      <div className="container">
+        <div className="zakas-inner">
+            <button className='close-btn'><img src={CloseIcon} alt="" /></button>
+            <h2 className='title'>Вход в аккаунт</h2>
+            <p className='text'>Возможный текст о том, что войдя в кабинет  процедура оформления заказа будет быстрее и легче </p>
+            <form onSubmit={handler} className='zakas-form'>
+              <input name='user' className='user' type="text" />
+              <input name='password' className='password' type="number" />
+              <Link href="#" className='forgot'>Забыли пароль?</Link>
+              <button className='form-btn'>Войти</button>
+              <h3>У вас еще нет аккаунта?</h3>
+              <Link href="#" className='login'>Зарегистрироваться</Link>
+              <span>или</span>
+              <button className='login-with'>Продолжить без регистрации</button>
+            </form>
+        </div>
+      </div>
+    </div>
     <section className='contact'>
       <header>
         <div className="header">
@@ -21,7 +57,7 @@ function Contact() {
             <div className="header__inner">
               <div className="head">
                 <ul className='list__right'>
-                  <li><a href="/"><img src={Logo} alt="" /></a></li>
+                  <li><Link href="/"><img src={Logo} alt="" /></Link></li>
                   <li>О клубе</li>
                   <select name="" id="">
                     <option value="">Услуги</option>
@@ -48,15 +84,15 @@ function Contact() {
               </div>
               <div className="hero">
                 <div className="hero__inner">
-                  <a href="/">Главная</a>
+                  <Link href="/">Главная</Link>
                   <h2>Контакты</h2>
                 </div>
                 <div className="social-media">
-                  <a href="#"><img src={Facebook} alt="" /></a>
-                  <a href="#"><img src={Vk} alt="" /></a>
-                  <a href="#"><img src={Whapp} alt="" /></a>
-                  <a href="#"><img src={Insta} alt="" /></a>
-                  <a href="#"><img src={Youtube} alt="" /></a>
+                  <Link href="#"><img src={Facebook} alt="" /></Link>
+                  <Link href="#"><img src={Vk} alt="" /></Link>
+                  <Link href="#"><img src={Whapp} alt="" /></Link>
+                  <Link href="#"><img src={Insta} alt="" /></Link>
+                  <Link href="#"><img src={Youtube} alt="" /></Link>
                 </div>
               </div>
             </div>
@@ -72,7 +108,7 @@ function Contact() {
                 ул. Пестовская</span>
               <p className='text'>(проезд до шлагбаума с указателем «яхт-клуб Tenzor Sailing Club»)</p>
               <a className='phone-number' href="tel8 (495) 121-3-777">8 (495) 121-3-777</a>
-              <a className='email' href="info@tanzor-sailing-club.com">info@tanzor-sailing-club.com</a>
+              <Link className='email' href="info@tanzor-sailing-club.com">info@tanzor-sailing-club.com</Link>
               <span className='gps'><b>GPS-координаты</b>: N 56.096555 E 37.629250</span>
               <button className='contact__main-btn'>у меня остались вопросы</button>
             </div>
@@ -138,33 +174,33 @@ function Contact() {
               <h3 className='title'>Контакты</h3>
               <span className='text'>141052, Россия, Московская область, г. Мытищи, д. Румянцево ул. Пестовская
                 GPS-координаты: N 56.096555 E 37.629250</span>
-              <a className='open' href="#">Открыть в Яндекс картах</a>
-              <a className='phone-number' href="tel8 (495) 121-3-777">8 (495) 121-3-777</a>
-              <a className='email' href="info@tenzor-sailing-club.com">info@tenzor-sailing-club.com</a>
+              <Link className='open' href="#">Открыть в Яндекс картах</Link>
+              <Link className='phone-number' href="tel8 (495) 121-3-777">8 (495) 121-3-777</Link>
+              <Link className='email' href="info@tenzor-sailing-club.com">info@tenzor-sailing-club.com</Link>
               <div className="social-media">
-                <a href="#"><img src={Facebook} alt="" /></a>
-                <a href="#"><img src={Vk} alt="" /></a>
-                <a href="#"><img src={Whapp} alt="" /></a>
-                <a href="#"><img src={Insta} alt="" /></a>
-                <a href="#"><img src={Youtube} alt="" /></a>
+                <Link href="#"><img src={Facebook} alt="" /></Link>
+                <Link href="#"><img src={Vk} alt="" /></Link>
+                <Link href="#"><img src={Whapp} alt="" /></Link>
+                <Link href="#"><img src={Insta} alt="" /></Link>
+                <Link href="#"><img src={Youtube} alt="" /></Link>
               </div>
             </li>
             <li className='footer-item'>
               <h3>уСЛУГИ</h3>
-              <a href="#">Корпоративные регаты</a>
-              <a href="#">Тимбилдинг</a>
-              <a href="#">Частные мероприятия</a>
-              <a href="#">Аренда яхт</a>
-              <a href="#">Страхование участников</a>
+              <Link href="#">Корпоративные регаты</Link>
+              <Link href="#">Тимбилдинг</Link>
+              <Link href="#">Частные мероприятия</Link>
+              <Link href="#">Аренда яхт</Link>
+              <Link href="#">Страхование участников</Link>
               <span>SUCCESS RACE</span>
               <span>TENZOR INTERNATIONAL CUP</span>
             </li>
             <li className='footer-item'>
               <h3>Академия TSA</h3>
-              <a href="#">Детская парусная академия</a>
-              <a href="#">Тренировки для взрослых</a>
-              <a href="#">Расписание и стоимость занятий</a>
-              <a href="#">Записаться на занятие</a>
+              <Link href="#">Детская парусная академия</Link>
+              <Link href="#">Тренировки для взрослых</Link>
+              <Link href="#">Расписание и стоимость занятий</Link>
+              <Link href="#">Записаться на занятие</Link>
               <span>Магазин</span>
               <span>СМИ о нас</span>
               <span>Ближайшие события</span>
@@ -187,6 +223,7 @@ function Contact() {
         </div>
       </footer>
     </section>
+    </>
   )
 }
 
