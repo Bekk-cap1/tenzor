@@ -1,0 +1,100 @@
+.and_inner{
+    margin-top: 58px;
+    .and_title{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 47px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 70.5px */
+        text-transform: uppercase;
+        margin-left: 100px;
+    }
+    .and_top{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 41px;
+        margin-left: -50px;
+        .and_block1{
+            h3{
+                color: #000;
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%; /* 22.5px */
+                letter-spacing: 2.25px;
+                text-transform: uppercase;
+            }
+            p{
+                margin-top: 22px;
+                width: 443px;
+                color: #484848;
+                font-family: Montserrat;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 150%; /* 25.5px */
+            }
+        }
+    }
+
+    .and_button{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: -31px;
+        margin-left: 120px;
+        .and_block2{
+            margin-right: 80px;
+            h3{
+                color: #000;
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%; /* 22.5px */
+                letter-spacing: 2.25px;
+                text-transform: uppercase;
+            }
+            p{
+                margin-top: 22px;
+                width: 443px;
+                color: #484848;
+                font-family: Montserrat;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 150%; /* 25.5px */
+            }
+        }
+    }
+    .and_equipmentplaces{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        div{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            p{
+                margin-left: 20px;
+                width: 232px;
+                color: #000;
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 150%; /* 22.5px */
+            }
+        }
+        :nth-child(2){
+            p{
+                margin-top: 50px;
+                width: 264px;
+            }
+        }
+    }
+}
